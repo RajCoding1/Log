@@ -1,0 +1,135 @@
+/* LoginBox.css */
+
+html {
+    height: 100%;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: linear-gradient(#21a7fa, #0e335e);
+  }
+
+  body > .Toastify > .Toastify__toast-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logo {
+    display: block; /* Center-align the logo */
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 10px; /* Added padding */
+  }
+  
+  img {
+    width: 190px;
+    height: 70px;
+  }
+  
+  .login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 450px; /* Adjust the width as needed */
+    height: 500px; /* Allow the height to adjust based on content */
+    padding: 40px;
+    padding-top: 35px;
+    transform: translate(-50%, -50%);
+    background: rgb(255, 255, 255);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+  }
+  
+  .login-box h2 {
+    margin: 0;
+    padding: 0;
+    color: #0c77b9;
+    text-align: center;
+    padding-bottom: 20px; /* Added padding */
+  }
+  
+  .login-box .user-box {
+    position: relative;
+  }
+
+  
+  
+  .login-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #0c77b9;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #0c77b9;
+    outline: none;
+    background: transparent;
+  }
+  
+  .login-box .user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #0c77b9;
+    pointer-events: none;
+    transition: 0.5s;
+  }
+  
+  .login-box .user-box input:focus ~ label,
+  .login-box .user-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #0c77b9;
+    font-size: 12px;
+  }
+  
+  .login-box form button {
+    position: relative;
+    display: block; /* Center-align the submit button */
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #009e42;
+    color: #ffffff;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 0.5s;
+    margin-top: 40px;
+    letter-spacing: 4px;
+  }
+  
+  .login-box button {
+    position: absolute;
+    display: block;
+  }
+  
+  /* Added styles for the "Forgot Password" link */
+  .login-box .forgot-password {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  /* Media query for screens with a max-width of 768px */
+  @media screen and (max-width: 768px) {
+    .login-box {
+      width: 80%;
+      padding: 20px;
+    }
+  
+    .user-box {
+      margin-bottom: 20px;
+    }
+  
+    button[type="submit"] {
+      font-size: 14px;
+    }
+  }
+  
+  
